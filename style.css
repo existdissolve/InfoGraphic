@@ -1,0 +1,263 @@
+body {
+    font-family:Helvetica,Arial,sans-serif;
+    background-color:#212121;
+}
+.container {
+    width:1024px;
+    height:576px;
+    background-image:url(redbg.jpg);
+    margin: 80px auto;
+    box-shadow: 4px 4px 20px #000;
+    border-radius:4px;
+}
+.content {
+    background-color: white;
+    box-shadow: 1px 1px 8px #555;
+    height: 420px;
+    margin: 90px 35px 0;
+    border-radius:4px;
+    float:left;
+}
+.left-info {
+    width: 174px;
+    height: 342px;
+    float: left;
+    padding: 22px 13px 0;
+    text-transform:uppercase;
+    text-align:center;
+}
+.main-info {
+    width: 742px;
+    height: 352px;
+    float: left;
+    padding:12px 12px 0 0;
+}
+.bottom-info {
+    clear: both;
+    height: 56px;
+    font-weight: bold;
+    font-size: 21pt;
+    color: #333;
+    text-align: center;
+    line-height: 40pt;
+}
+.red {
+    color:#d3152e;
+    font-weight:bold;
+    text-shadow:1px 1px 1px #666;
+    font-family:Arial Black;
+}
+.top {
+    font-size: 36pt;
+}
+.four {
+    font-size: 70pt;
+}
+.gains {
+    font-size: 20pt;
+}
+.label {
+    margin-top: 20px;
+    border-top: solid 3px #d3152e;
+    border-bottom: solid 3px #d3152e;
+    padding: 15px 0;
+    font-family: Arial;
+    font-size: 20pt;
+    font-weight: bold;
+}
+.bar {
+    z-index:0;
+    height:82px;
+    margin-bottom:6px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    width:0px;
+    border-radius:0px 4px 4px 0;
+    box-shadow: 1px 1px 2px #999;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-name: expanding;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-name: expanding;
+    -moz-animation-duration: .5s;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-fill-mode: forwards;
+}
+.web a,.twitter a {
+    font-weight:bold;
+    font-size:20pt;
+    color:white;
+    text-decoration:none;
+    text-shadow:1px 1px 1px #666;
+}
+.twitter {
+    text-align:right;
+}
+.web,.twitter,.logo {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+}
+.logo {
+    text-align: center;margin-top: 8px;
+}
+.ads {
+    width:954px;
+    height:66px;
+    margin:0 35px;
+    display: -webkit-box;
+    display: -moz-box;
+    line-height:48pt;
+}
+.bar img {
+    width:82px;height:82px;
+}
+.bar .name {
+    text-shadow:1px 1px 1px #666;
+    margin: 10px 0 0 60px;
+    color:white;
+    font-weight:bold;
+    font-size:48pt;
+    text-transform:uppercase;
+    opacity:0;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-name: naming;
+    -webkit-animation-duration: .25s;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transition: margin .2s ease-in-out;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-name: naming;
+    -moz-animation-duration: .25s;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-fill-mode: forwards;
+    -moz-transition: margin .2s ease-in-out;                
+}
+.bar .name:hover {
+    margin-left:10px;
+}
+.bar .total {
+    margin:10px;
+    font-size:40pt;
+    background:white;
+    color:#333;
+    padding:3px 10px 3px 15px;
+    font-weight:bold;
+    border: solid 1px #444;
+    opacity:0;
+    border-radius:4px;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-name: totaling;
+    -webkit-animation-duration: .25s;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transition: box-shadow .2s ease-in-out;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-name: totaling;
+    -moz-animation-duration: .25s;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-fill-mode: forwards;
+    -moz-transition: box-shadow .2s ease-in-out;
+}
+.bar .total:hover {box-shadow: 0 0 15px rgba(0, 0, 0, 1);}
+.bluebg {
+    background: -moz-linear-gradient(top,  #3668e1 0%, #2b56b5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3668e1), color-stop(100%,#2b56b5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #3668e1 0%,#2b56b5 100%); /* Chrome10+,Safari5.1+ */
+}
+.redbg {
+    background: -moz-linear-gradient(top,  #ce142b 0%, #ad1021 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ce142b), color-stop(100%,#ad1021)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ce142b 0%,#ad1021 100%); /* Chrome10+,Safari5.1+ */
+}
+.greenbg {
+    background: -moz-linear-gradient(top,  #119329 0%, #0d7b22 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#119329), color-stop(100%,#0d7b22)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #119329 0%,#0d7b22 100%); /* Chrome10+,Safari5.1+ */
+}
+.greybg {
+    background: -moz-linear-gradient(top,  #535353 0%, #434343 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#535353), color-stop(100%,#434343)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #535353 0%,#434343 100%); /* Chrome10+,Safari5.1+ */
+}
+.bluebg {
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+}
+.redbg {
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+}
+.greenbg {
+    -webkit-animation-delay: .25s;
+    -moz-animation-delay: .25s;
+}
+.greybg {
+    -webkit-animation-delay: .75s;
+    -moz-animation-delay: .75s;
+}
+.total.newt {
+    -webkit-animation-delay: .5s; 
+    -moz-animation-delay: .5s;      
+}
+.total.rick {
+    -webkit-animation-delay: 1.0s;
+    -moz-animation-delay: 1.0s;    
+}
+.total.mitt {
+    -webkit-animation-delay: .7s;
+    -moz-animation-delay: .7s;     
+}
+.total.ron {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;    
+}
+.name.newt {
+    -webkit-animation-delay: .25s;
+    -moz-animation-delay: .25s;    
+}
+.name.rick {
+    -webkit-animation-delay: .75s;
+    -moz-animation-delay: .75s;    
+}
+.name.mitt {
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;    
+}
+.name.ron {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;    
+}
+@-webkit-keyframes expanding {
+    0%   { width:0;}
+    100% { width:100%;}
+}
+@-moz-keyframes expanding {
+    0%   { width:0; }
+    100% { width:100%; }
+}
+@-webkit-keyframes totaling {
+    0%   {opacity:0;margin-right:-100px;}
+    100% {opacity:1;margin-right:8px;}
+}
+@-moz-keyframes totaling {
+    0%   {opacity:0;margin-right:-100px;}
+    100% {opacity:1;margin-right:8px;}
+}
+@-webkit-keyframes naming {
+    0%   {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes naming {
+    0%   {opacity:0;}
+    100% {opacity:1;}
+}
+/* these rules apply to Firefox only */
+@-moz-document url-prefix() {
+    .bar .total {padding:6px 10px 0 15px;}
+    .bar .name {margin: 15px 0 0 60px;}
+}
